@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Touhid | Full-Stack Web Developer – React.js, Node.js &amp; IoT</title>
+    <meta
+      name="description"
+      content="Portfolio of Touhidul Islam (Touhid), a Full-Stack Web Developer from Bangladesh working with React.js, Node.js, Express.js, MongoDB and IoT projects."
+    />
+    <meta name="author" content="Touhidul Islam" />
+    <meta name="theme-color" content="#08090c" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Open Graph / social sharing. Add og:image and og:url once you have a deployed URL and a 1200x630 image. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Touhid | Full-Stack Web Developer" />
+    <meta
+      property="og:description"
+      content="Building modern, scalable web experiences with React.js, Node.js and IoT."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Touhid | Full-Stack Web Developer" />
+    <meta
+      name="twitter:description"
+      content="Building modern, scalable web experiences with React.js, Node.js and IoT."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Apply the saved theme before first paint to avoid a flash. Dark is the default. -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('touhid-theme');
+          if (saved === 'light') {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.style.colorScheme = 'light';
+          } else {
+            document.documentElement.classList.add('dark');
+            document.documentElement.style.colorScheme = 'dark';
+          }
+        } catch (e) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>This portfolio needs JavaScript enabled to display its content.</noscript>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
